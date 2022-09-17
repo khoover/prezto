@@ -97,6 +97,7 @@
     timewarrior             # timewarrior tracking status (https://timewarrior.net/)
     # taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     battery               # internal battery
+    date
     time                    # current time
     # =========================[ Line #2 ]=========================
     newline
