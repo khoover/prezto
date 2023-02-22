@@ -29,3 +29,6 @@
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "contrib/zshrc.d/external"]
+	path = contrib/zshrc.d/external
+	url = https://github.com/zshzoo/zshrc.d
