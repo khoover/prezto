@@ -31,4 +31,4 @@
 	shallow = true
 [submodule "contrib/zshrc.d/external"]
 	path = contrib/zshrc.d/external
-	url = https://github.com/zshzoo/zshrc.d
+	url = git@github.com:mattmc3/zshrc.d.git
