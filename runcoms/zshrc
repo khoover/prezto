@@ -11,6 +11,12 @@ fi
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+if [ -d ~/.shellrc.d ]; then
+    for i in $(find $HOME/.shellrc.d/ -name '*.sh' -o -name '*.zsh' | sort); do
+        . $i
+    done
+    unset i
+fi
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -20,12 +26,6 @@ fi
 # Customize to your needs...
 # BENTO REMOTE: This block will load up all '*.zsh' files in ~/.zshrc.d/ in alphabetical order into your shell. 
 # If you remove this block you will break future updates for your Bento Remote instance
-if [ -d ~/.shellrc.d ]; then
-    for i in $(find $HOME/.shellrc.d/ -name '*.sh' -o -name '*.zsh' | sort); do
-        . $i
-    done
-    unset i
-fi
 
 #if [ -d ~/.zshrc.d ]; then
 #    for i in $(find $HOME/.zshrc.d/ -name '*.zsh' -o -name '*.sh' | sort); do
@@ -57,3 +57,11 @@ fi
  
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+### BEGIN--Instacart Shell Settings. (Updated: Thu Jan 18 15:28:51 PST 2024. [Script Version 1.3.27]) NO-TOUCH
+# This Line Added Automatically by Instacart Setup Script
+# The sourced file contains all of the instacart utilities and shell settings
+# To remove this functionality, leave the block, and enter "NO-TOUCH" in the BEGIN line, and comment the line below:
+#source /home/bento/.instacart_shell_profile
+### END--Instacart Shell Settings.
